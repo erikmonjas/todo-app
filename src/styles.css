@@ -1,0 +1,109 @@
+body {
+  padding: 5vw;
+  font-family: "Helvetica", "Arial";
+  max-width: 600px;
+  margin: 0 auto;
+  color: #636363;
+  display: flex;
+  justify-content: center;
+  line-height: 1.3rem;
+}
+
+#root {
+  width: 405px;
+}
+
+@media (max-width: 450px) {
+  #root {
+    width: 300px;
+  }
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  width: 85px;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  min-height: 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+button:disabled {
+  background-color: rgb(132, 194, 255);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  min-height: 28px;
+  border: none;
+  border: 1px solid dodgerblue;
+  border-radius: 3px;
+  padding: 0 5px;
+  width: 80%;
+}
+
+.blue {
+  color: dodgerblue;
+  margin-top: 40px;
+}
+
+.green {
+  color: limegreen;
+  margin-top: 50px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 15px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li span {
+  width: 200px;
+  display: inline-block;
+}
+
+.delete {
+  background-color: crimson;
+}
+
+.mark-done {
+  background-color: limegreen;
+}
+
+.error-message {
+  color: crimson;
+}
+
+.done-list li span {
+  text-decoration: line-through;
+}
+
+.anim-appear {
+  opacity: 0.01;
+  transform: translateX(-20px);
+}
+
+.anim-appear.anim-appear-active {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  transform: translateX(0);
+}
